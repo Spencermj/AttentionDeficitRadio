@@ -13,7 +13,7 @@ We want to look at [Attention Deficit Radio] and see how it makes the decisions 
 4. [remix.js]
 
 ### 1. Choosing the next song
-To begin the program, the name of an artist must first be entered. After the user has chosen an artist, the program calls the startRadio() function using the artist's name as a paramater. The startRadio() function starts by ending all current sessions in case a song is already playing, and then it uses the [Playlist Module] to create a static playlist based off of the chosen artist. The playlist module is provided by [The Echonest] and it creates a list of songs that are similar to the style of a certain artist. The author of the program used the following code to create a playlist with 30 results based off of the artist the user chose.
+To begin the program, the name of an artist must first be entered. After the user has chosen an artist, the program calls the startRadio() function using the artist's name as a paramater. The startRadio() function starts by ending all current sessions in case a song is already playing, and then it uses the [Playlist Module] to create a static playlist based off of the chosen artist. The playlist module is provided by [The Echonest] and it creates a list of songs that are similar to the style of a certain artist. The author of the program used the following code to create a playlist with 30 songs based off of the artist the user chose:
 ```python
 var url = 'http://developer.echonest.com/api/v4/' + 'playlist/static';
     $.getJSON(url, {
